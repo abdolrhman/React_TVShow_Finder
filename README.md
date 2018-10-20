@@ -6,6 +6,9 @@
 
 - Search bar to search for TV shows 
 - Show single TvShow
+- Page Pagination "Choose The Page first then search"
+
+> To Use Page pagination Choose The Page first then search , as you will have to set the state of page before calling the search .
 
 ## Application Technologies:-
 
@@ -27,10 +30,9 @@
 
 ## Problems I had:-
 
-#### Acessing a propaperty inside an object inside an object , for ex "data.show.image.original"
-#### I Had to devide them in seprate array
+- Acessing a propaperty inside an object inside an object , for ex "data.show.image.original", I Had to devide them in seprate array
 
-#### Also for Show single showTV i wasnt sure how to get single id from the URL and move it to another page but I did walk through it step by step.
+- Also for Show single showTV i wasnt sure how to get single id from the URL and move it to another page but I did walk through it step by step.
 
 
 

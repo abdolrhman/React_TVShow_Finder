@@ -13,6 +13,7 @@ class Search extends Component {
     };
 
     onTextChange = e => {
+        console.log('ammm', this.state.amount)
         const val = e.target.value;
         this.setState({ [e.target.name]: val }, () => { 
             if(val === ''){
@@ -37,14 +38,7 @@ class Search extends Component {
         return (
             <div>
                 <h2 style={{textAlign: 'center', cursor: 'none'}}>Please enter any query to start searching Shows</h2>
-                <TextField style={{width:350, marginLeft:350}}
-                    name="searchText"
-                    value={this.state.searchText}
-                    onChange={this.onTextChange}
-                    floatingLabelText="Search Your Favorite Movie"
-                    fullWidth={true}
-                />
-                <br/>
+
                 <SelectField style={{width:350, marginLeft:350}}
                   name="amount" 
                   floatingLabelText="Page"
@@ -57,7 +51,17 @@ class Search extends Component {
                   <MenuItem value={4} primaryText="4"/>   
                   <MenuItem value={5} primaryText="5"/>                    
                   </SelectField>
+                < br / >
+
+                <TextField style={{width:350, marginLeft:350}}
+                    name="searchText"
+                    value={this.state.searchText}
+                    onChange={this.onTextChange}
+                    floatingLabelText="Search Your Favorite Movie"
+                    fullWidth={true}
+                />
                 <br/>
+
                 {this.state.data.length > 0 ? (<ImageResults data={this.state.data}/>) : <h3 style={{textAlign: 'center', cursor: 'none'}}>use the search bar to get shows you want</h3>}
             </div>
         )
