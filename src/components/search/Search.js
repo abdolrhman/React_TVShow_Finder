@@ -33,6 +33,7 @@ class Search extends Component {
     
     render() {
         console.log(this.state.data);
+        console.log('amount',this.state.amount);
         return (
             <div>
                 <h2 style={{textAlign: 'center', cursor: 'none'}}>Please enter any query to start searching Shows</h2>

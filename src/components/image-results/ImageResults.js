@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import { GridList, GridTile } from 'material-ui/GridList';
 import { Link } from 'react-router-dom';
 
+/**
+ * Component for Render search result
+ */
 class ImageResults extends Component {
 
     render() {

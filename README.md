@@ -24,4 +24,14 @@
 
 ![show All](https://preview.ibb.co/eeYDO0/Screenshot-at-2018-10-20-18-24-34.png)
 
+
+## Problems I had:-
+
+#### Acessing a propaperty inside an object inside an object , for ex "data.show.image.original"
+#### I Had to devide them in seprate array
+
+#### Also for Show single showTV i wasnt sure how to get single id from the URL and move it to another page but I did walk through it step by step.
+
+
+
 > By Abdelrhman For KigaMII
